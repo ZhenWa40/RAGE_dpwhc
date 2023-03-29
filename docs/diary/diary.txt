@@ -1,0 +1,12 @@
+[EXAMPLE DIARY, BASED ON JT'S RESEARCH]
+
+Project  RAGE  
+
+Regression After Gene Expression
+
+Aim: investigation of principal component analysis for feature
+extraction from gene expression data when the ultimate goal is
+disease diagnosis.
+
+2023.03.29 
+Project folder created with a git archive mirrored on github.
