@@ -1,0 +1,54 @@
+---
+title: 'RAGE: Check Data'
+author: "John Thompson"
+date: "29 March 2023"
+output: 
+  html_document:
+    theme: cerulean
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(fs)
+
+cache    <- "C:/Users/dpwhc2/OneDrive - University of Leicester/JT_course/Projects/RAGE_dpwhc/data/cache"
+
+
+knitr::opts_chunk$set(echo = FALSE, 
+                      message=FALSE)
+```
+
+## Background
+
+Data for RAGE project. File GSE168753_processed_data.csv.gz
+downloaded from https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE168753  
+
+## Warning Messages
+
+```{r}
+readLines(path(cache, "read_data_log.txt"))
+```
+
+## Patient Data
+
+```{r}
+readRDS(path(cache, "patients.rds"))
+```
+
+## Expression Data
+
+```{r}
+readRDS(path(cache, "expression.rds"))
+```
+
+## Training Data
+
+```{r}
+readRDS(path(cache, "training.rds"))
+```
+
+## Validation Data
+
+```{r}
+readRDS(path(cache, "validation.rds"))
+```
